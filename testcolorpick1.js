@@ -1470,7 +1470,7 @@ function KellyColorPicker(cfg) {
     }
 
     function hexToRgb(hex) {
-        var dec = parseInt(hex.charAt(0) == '#' ? hex.slice(1) : hex, 16);
+        var dec = parseInt(hex.charAt(0) == '[' ? hex.slice(1) : hex, 16);
         return {r: dec >> 16, g: dec >> 8 & 255, b: dec & 255};
     }
 
